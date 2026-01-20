@@ -8,5 +8,41 @@
   <h1>👑 Bienvenido a mi página</h1>
   <p>Pordio (Sebastian Rosero o mas bien un amigo muy malo) abajo mas luego pongo el video mientras sigue explorando la pagina.</p>
   <p>Explora</p>
+<!-- Música elegante -->
+<audio id="musica" autoplay loop>
+  <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_5e1c2a6c2b.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  const audio = document.getElementById("musica");
+  audio.volume = 0.3;
+
+  document.addEventListener("click", () => {
+    audio.play();
+  });
+</script>
+
 </body>
 </html>
+<hr>
+
+<div style="margin-top:40px;">
+  <h2>🔥 Zona en construcción</h2>
+  <p>Muy pronto habrá videos, imágenes y más cosas 👀</p>
+</div>
+
+<style>
+body {
+  background: linear-gradient(-45deg, #000000, #1a1a1a, #2b2b2b, #000000);
+  background-size: 400% 400%;
+  animation: fondoAnimado 12s ease infinite;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+@keyframes fondoAnimado {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+</style>
